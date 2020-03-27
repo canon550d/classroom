@@ -17,9 +17,8 @@ public class ToolsTest {
 	
 	@Test
 	public void aspectJTest() {
-		
-		tools.arrayList("arrayList1");
 		tools.linkedList("linkedList1");
+		tools.arrayList("arrayList1");
 		
 		tools.arrayList("arrayList2");
 		tools.linkedList("linkedList2");

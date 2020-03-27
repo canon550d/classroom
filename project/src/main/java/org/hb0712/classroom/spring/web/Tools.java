@@ -26,12 +26,12 @@ public class Tools {
 		Map map = new TreeMap();
 	}
 	
-	private void fillList(List<String> list, String ptx) {
+	private void fillList(List<String> list) {
 		list.add("hello");
 		list.add("world");
 		list.add("I'am OK");
-		for(int i=0;i<1000000;i++) {
-			list.add(ptx+i);
+		for(int i=0;i<20000;i++) {
+			list.add(0,String.valueOf(i));
 		}
 	}
 	
@@ -44,7 +44,7 @@ public class Tools {
 	 */
 	public void arrayList(String pre) {
 		List<String> list = new ArrayList<String>();
-		fillList(list, pre);
+		fillList(list);
 //		list.add(2, "See");//删除index为2的数据
 //		list.remove("world");
 		System.out.println(list.get(10));
@@ -57,7 +57,7 @@ public class Tools {
 	 */
 	public void linkedList(String pre) {
 		List<String> list = new LinkedList<String>();
-		fillList(list, pre);
+		fillList(list);
 		System.out.println(list.get(10));
 	}
 
